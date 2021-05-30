@@ -1,0 +1,18 @@
+#%RAML 1.0
+title: API1
+baseUri: https://anypoint.mulesoft.com/mocking/api/v1/links/3333497b-097f-4fcc-9837-e29d65c8042c/ # baseUri: 
+version: 
+/users:
+# /users: -> path
+  get:
+    queryParameters:
+      id:
+        type: string
+    responses:
+      200:
+       body:
+         application/json:
+           example:
+             {
+               "Result":"success"
+             }
